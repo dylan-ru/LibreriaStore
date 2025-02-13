@@ -48,3 +48,5 @@ appsettings.Development.json
 # Logs
 logs/
 *.log
+.cursorrules
+requirements.md

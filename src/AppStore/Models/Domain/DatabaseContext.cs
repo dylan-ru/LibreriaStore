@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace AppStore.Models.Domain;
 
-public class DatabaseContext : IdentityDbContext
+public class DatabaseContext : IdentityDbContext<ApplicationUser>
 {
     public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options){
 
@@ -24,7 +24,7 @@ public class DatabaseContext : IdentityDbContext
         public DbSet<Book>? Books { get; set; }
         public DbSet<Category>? Categories { get; set; }
         public DbSet<CategoryBook>? CategoryBooks { get; set; }
-        //public DbSet<ApplicationUser>? ApplicationUsers { get; set; }
+        public DbSet<ApplicationUser>? ApplicationUsers { get; set; }
 
 
     
