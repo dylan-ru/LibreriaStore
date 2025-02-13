@@ -22,5 +22,5 @@ public class Book
     [NotMapped]
     public List<int>? Categories { get; set; }
     [NotMapped]
-    public string CategoryNames { get; internal set; }
+    public string CategoryNames { get; set; }
 }
